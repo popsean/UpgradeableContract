@@ -8,7 +8,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
   const proxyOptions = {
     proxyContract: "TransparentUpgradeableProxy",
-    viaAdminProxy: "ProxyAdmin",
+    viaAdminContract: "ProxyAdmin",
     execute: {
       init: {
         methodName: "initialize",
